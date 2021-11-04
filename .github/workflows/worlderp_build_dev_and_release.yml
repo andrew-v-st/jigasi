@@ -27,10 +27,10 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-#      - name: Build sources
-#        run: |
-#          mvn -DskipTests -Dassembly.skipAssembly=true package
-#          mvn dependency:copy-dependencies -DincludeScope=runtime
+      - name: Build sources
+        run: |
+          mvn -DskipTests -Dassembly.skipAssembly=true package
+          mvn dependency:copy-dependencies -DincludeScope=runtime
       - name: Package .deb
         uses: olegbal/build-dpkg-buster@master
         with:
