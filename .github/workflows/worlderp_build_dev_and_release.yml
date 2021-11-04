@@ -28,7 +28,6 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Build sources
-        uses: actions/setup-java@v2
         run: |
           mvn -DskipTests -Dassembly.skipAssembly=true package
           mvn dependency:copy-dependencies -DincludeScope=runtime
