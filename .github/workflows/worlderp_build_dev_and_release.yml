@@ -39,6 +39,6 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ steps.global_env.outputs.RELEASE_FULL_NAME }}
+          tag_name: ${{ steps.global_env.outputs.RELEASE_FULL_VERSION }}
           files: |
             ${{ steps.global_env.outputs.PACKAGE_NAME }}
