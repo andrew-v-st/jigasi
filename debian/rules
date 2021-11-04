@@ -5,7 +5,7 @@
 #export DEB_VERBOSE_ALL=true
 
 # Disable debug package
-DEB_BUILD_OPTIONS=noddebs
+export DEB_BUILD_OPTIONS=nostrip noddebs nocheck notest terse
 
 %:
 	dh $@
