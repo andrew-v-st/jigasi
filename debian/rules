@@ -20,8 +20,6 @@ override_dh_auto_build:
     #do nothing
 override_dh_install:
 	mkdir debian/tmp
-	cp jigasi-home/log4j2.xml debian/tmp/
-	sed -i "s/logs/\/var\/log\/jitsi/g" debian/tmp/log4j2.xml
 	cp target/jigasi*.jar debian/tmp/jigasi.jar
 	dh_install
 

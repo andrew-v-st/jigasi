@@ -185,7 +185,7 @@
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>jitsi-stats</artifactId>
-      <version>1.0-10-g14e178c</version>
+      <version>1.0-13-g1ca7967</version>
     </dependency>
     <dependency>
       <!--
@@ -327,12 +327,6 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.13.1</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>jitsi-videobridge</artifactId>
-      <version>1.1-20190408.175802-112</version>
       <scope>test</scope>
     </dependency>
     <dependency>
